@@ -1,6 +1,8 @@
 todo.txt
 *.html
 !vzorec1980.html
+*.csv
+!vzorec1980.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
