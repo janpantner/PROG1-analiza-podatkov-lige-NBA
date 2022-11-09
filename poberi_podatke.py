@@ -22,6 +22,9 @@ def poisci_igralce(ime_datoteke):
     igralci = re.findall(rx, vsebina)
     return igralci
 
+def statistika_igralca(igralec):
+    pass
+
 #with open('per_game1980.html', 'r', encoding='utf-8') as f:
 #    vsebina = f.read()
 #
@@ -37,12 +40,9 @@ def poisci_igralce(ime_datoteke):
     
 
 def main(redownload=True, reparse=True):
-    for year in range (START_YEAR, START_YEAR + 1): # spremeni
+    for year in range (START_YEAR, END_YEAR + 1): # spremeni
         shrani_sezono_v_html(year)
-
-    with open('test', 'w', encoding='utf-8') as file:
-        for igralec in poisci_igralce('per_game1980.html'):
-            file.write(igralec)
+    
 
 
 if __name__ == '__main__':
