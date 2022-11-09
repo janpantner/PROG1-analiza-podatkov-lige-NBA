@@ -3,6 +3,7 @@ todo.txt
 !vzorec1980.html
 *.csv
 !vzorec1980.csv
+!1980.csv
 test.py
 
 # Byte-compiled / optimized / DLL files
